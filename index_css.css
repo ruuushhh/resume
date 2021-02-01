@@ -14,7 +14,7 @@ body{
 /*======Header======*/
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.4)),url('./me.jpeg') left 0% / 100% 100% no-repeat ;
+    background: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.4)),url('./1.jpg') left 0% / 100% 100% no-repeat ;
     margin-top: auto;
 }
 
@@ -92,9 +92,10 @@ body{
 /* Create three unequal columns that floats next to each other */
 
 .column {
-    float: left;
+    float: right;
     padding: 10px;
-    height: auto /* Should be removed. Only for demonstration */
+    height: auto 
+    
   }
   
   /* Left and right column */
@@ -119,6 +120,15 @@ body{
     .column.side, .column.middle {
       width: 100%;
     }
+    .column.side  p{
+        text-align: center;
+    }
+    .column.side  h2{
+        text-align: center;
+    }
+    .column.side  h3{
+        text-align: center;
+    }
     .center {
         display: flex;
         margin-left: auto;
@@ -135,7 +145,7 @@ body{
 
 .skills-image{
     min-height: 80vh;
-    background:url('./1.jpg') left 0% / 80% 100% no-repeat;
+    background:url('./rr.jpg') left 0% / 80% 100% no-repeat;
 }
 .skills-text{
     min-height: 80vh;
@@ -194,3 +204,137 @@ body{
         text-align: center;
     }
 }
+
+
+
+.education-image{
+    min-height: 80vh;
+    background:url('./qq.jpeg') right 0% / 80% 100% no-repeat;
+}
+.education-text{
+    min-height: 80vh;
+    text-align: center ;
+    align-items: center;
+    background: black;
+    columns: white;
+    padding: 50px 20px;
+}
+.education-text-centre{
+    width: 90%;
+    margin: 0 auto;
+}
+.education-text h1{
+    font-size: 40px;
+    color: skyblue;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.education-text p{
+    margin:20px 0;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 2;
+}
+
+.education-text p::before{
+    content: ' \220E';
+    color: orangered;
+}
+
+@media screen and (min-width: 600px){
+    .education{
+        display: flex;
+    }
+    .education-text{
+        flex: 0 0 30%;
+    }
+    .education-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0% 1%,100% 1%,100% 100%,50.00% 100.00%,0% 0%);
+    }
+    .education{
+        background: black;
+    }
+}
+@media screen and (max-width: 776px){
+    .education{
+        display: flex;
+    }
+    .education-image{
+       content: none;
+    }
+    .education-text{
+        flex: 0 0 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+.project-image{
+    min-height: 80vh;
+    background:url('./kk.jpeg') right 0% / 80% 100% no-repeat;
+}
+.project-text{
+    min-height: 80vh;
+    text-align: center ;
+    align-items: center;
+    background: black;
+    columns: white;
+    padding: 50px 20px;
+}
+.project-text-centre{
+    width: 90%;
+    margin: 0 auto;
+}
+.project-text h1{
+    font-size: 40px;
+    color: skyblue;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.project-text p{
+    margin:20px 0;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 2;
+}
+
+.project-text p::before{
+    content: ' \220E';
+    color: orangered;
+}
+
+@media screen and (min-width: 600px){
+    .project{
+        display: flex;
+    }
+    .project-text{
+        flex: 0 0 30%;
+    }
+    .project-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0% 1%,100% 1%,100% 100%,50.00% 100.00%,0% 0%);
+    }
+    .project{
+        background: black;
+    }
+}
+@media screen and (max-width: 776px){
+    .project{
+        display: flex;
+    }
+    .project-image{
+       content: none;
+    }
+    .project-text{
+        flex: 0 0 100%;
+        text-align: center;
+    }
+}
+
