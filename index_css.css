@@ -18,6 +18,10 @@ body{
     margin-top: auto;
 }
 
+#line{
+    font-size: 5px; 
+    color: white;
+}
 .me{
     display: flex;
     flex-direction: column;
@@ -55,6 +59,10 @@ body{
         font-size: 20px;
         color: red;
     }
+    #line{
+    font-size: 1px; 
+    color: white;
+}
 }
 
 
