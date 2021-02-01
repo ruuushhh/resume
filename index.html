@@ -12,11 +12,13 @@
     <header class="header">
         <div class="me">
             <h1 class='myTitleName'>Rushikesh Tayade</h1>
-            <p style="font-size: 30;color: whitesmoke;"> Interactive Resume</p>
+            <p style="font-size: 5px; color: white;">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+            <p> Interactive Resume</p>
         </div>
     </header>
+    
     <section>
-    <div class="profile">
+    <div class="profile" id="profile">
         <h1>PROFILE</h1>
         <div class="padding">
             <div class="row">
@@ -43,7 +45,13 @@
         </div>
     </div>
     </section>
+    <div id="navbar">
+        <a href="#profile">Profile</a>
+        <a href="#education">Education</a>
+        <a href="#skills" >Skills</a>
+        <a href="#project" >Projects</a>
 
+      </div>
     <section class="education" id="education">
         
         <article class="education-text">
@@ -85,6 +93,26 @@
             </article>
             <article class="project-image"></article>
     </section>
+    <section id="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram instagaram"></i></a>
+        <a href="#"><i class="fab fa-google-plus plus"></i></a>
+    </section>
     
+
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+        </script>
 </body>
 </html>
